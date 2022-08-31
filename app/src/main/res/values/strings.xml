@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DrSmart</string>
+    <string-array name="symptoms_list">
+        <item>Nausea</item>
+        <item>Headache</item>
+        <item>Diarrhea</item>
+        <item>Sore Throat</item>
+        <item>Fever</item>
+        <item>Muscle Pain</item>
+        <item>Loss of Smell or Taste</item>
+        <item>Cough</item>
+        <item>Shortness of Breath</item>
+        <item>Tiredness</item>
+    </string-array>
+</resources>

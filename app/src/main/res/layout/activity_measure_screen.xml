@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#93AA78"
+    tools:context=".MeasureScreen">
+
+    <Button
+        android:id="@+id/btnNxt"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/teal_700"
+        android:text="Go To Symptoms Data"
+        android:textColor="#EAE1E1"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnResp"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/BtnResp"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/teal_700"
+        android:text="Measure Respiratory Rate"
+        android:textColor="#F8F5F5"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHeart"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/btnHeart"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/teal_700"
+        android:text="Measure Heart Rate"
+        android:textColor="#DFD4D4"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/viewHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BtnResp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:text="Measured Heart Rate: "
+        android:textColor="#121010"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/btnHeart"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/btnHeart"
+        app:layout_constraintTop_toBottomOf="@+id/btnHeart" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="166dp"
+        android:layout_height="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/viewResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewHeart"
+        android:layout_alignParentEnd="true"
+        android:text="Measured Respiratory Rate: "
+        android:textColor="#121010"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/BtnResp"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/BtnResp"
+        app:layout_constraintTop_toBottomOf="@+id/BtnResp"
+        app:layout_constraintVertical_bias="0.142" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
